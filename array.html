@@ -1,0 +1,193 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+document.write("1.  ");
+var artist=["Ms Marvel","Moon Knight","Iron Fist"];
+artist.push("Eternals")
+artist.sort();
+artist.reverse();
+document.write("the next avengers are "+artist);
+
+</script>
+
+<br>
+<br>
+<br>
+
+<script>
+document.write("2.  ");
+
+var artist=["Ms Marvel","Moon Knight","Iron Fist"];
+artist.pop()
+document.write("the next avengers are "+artist);
+
+</script>
+
+<br>
+<br>
+<br>
+
+<script>
+document.write("3.  ");
+
+var artist=["Ms Marvel","Moon Knight","Iron Fist"];
+artist.shift()
+document.write("the next avengers are "+artist);
+
+</script>
+
+<br>
+<br>
+<br>
+
+<script>
+document.write("4.  ");
+
+var artist=["Ms Marvel","Moon Knight","Iron Fist"];
+artist.unshift("Eternals")
+document.write("the next avengers are "+artist);
+
+</script>
+
+
+<br>
+<br>
+<br>
+
+<script>
+document.write("5.  ");
+
+var artist=["Ms Marvel","Moon Knight","Iron Fist","Spider Man","Shang-chi","She Hulk"];
+artist.splice(3,1,"Wong") //position//No. of elements//addition of elements
+document.write("the next avengers are "+artist);
+
+</script>
+
+
+<br>
+<br>
+<br>
+
+<script>
+document.write("6.  ");
+
+var artist=["Ms Marvel","Moon Knight","Iron Fist","Spider Man","Shang-chi","She Hulk"];
+var marvel=artist.slice(-2,-1); 
+document.write("the next avengers are "+marvel);
+
+</script>
+
+<br>
+<br>
+<br>
+
+<script>
+document.write("7.  ");
+
+var Marvel=["Ms Marvel","Moon Knight","Iron Fist","Spider Man","Shang-chi","She Hulk"];
+var DC=["Green Lantern","Black Adam","Dr Fate"]
+var moviemania=Marvel.concat(DC);
+document.write("the next avengers are "+moviemania);
+
+</script>
+
+<br>
+<br>
+<br>
+
+<script>
+document.write("8.  ");
+
+var artist=["Ms Marvel","Moon Knight","Iron Fist"];
+document.write("the next avengers are "+artist.join(" and "));
+
+</script>
+
+
+
+<br>
+<br>
+<br>
+
+<script>
+document.write("9.  ");
+
+var balayya=["Ms Marvel","Moon Knight","Iron Fist","Spider Man","Shang-chi","She Hulk"];
+[hero1,hero2,hero3,hero4,hero5,hero6]=balayya
+
+document.write("the next avengers are "+hero3);
+
+
+</script>
+
+
+<br>
+<br>
+<br>
+
+
+
+<script>
+document.write("10.  ");
+
+var balayya=["Ms Marvel","Moon Knight","Iron Fist","Spider Man","Shang-chi","She Hulk"];
+
+[hero1,...dummyheroes]=balayya
+
+document.write(dummyheroes);
+
+
+</script>
+
+
+<br>
+<br>
+<br>
+
+
+
+<script>
+document.write("11.  ");
+var marvel=["Ms Marvel","Moon Knight","Iron Fist","Spider Man","Shang-chi","She Hulk"];
+marvel.forEach(powerful)
+function powerful(item)
+{
+document.write("New characters are "+item+"<br>")
+}
+</script>
+
+<br>
+<br>
+<br>
+
+
+
+<script>
+
+document.write("12.  ");
+var marvelhero=["Ms Marvel","Moon Knight","Iron Fist","Spider Man","Shang-chi","She Hulk"]
+marvelhero.forEach((item,index)=>{document.write("I Love "+item+"<br>")});
+
+</script>
+
+<br>
+<br>
+<br>
+
+<script>
+
+document.write("13.  ");
+var marvelhero=[]
+marvelhero.forEach((item,index)=>{document.write("I Love "+item+"<br>")});
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

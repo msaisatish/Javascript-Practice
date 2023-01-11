@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var num=145;
+var sum=0,rem=0,i,num1,fact;
+var temp=num;
+while(num>0)
+{
+
+rem=num%10;
+num1=rem;
+fact=1;
+for(i=1;i<=num1;i++)
+{
+
+fact=fact*i;
+
+}
+sum=sum+fact;
+num=parseInt(num/10);
+}
+
+if(temp==sum)
+{
+document.write(temp+ " is a strong number");
+}
+else
+{
+document.write(temp+ " is not a strong number");
+}
+
+
+</script>
+</body>
+</html>

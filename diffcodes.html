@@ -1,0 +1,103 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var digit=0;
+var char=1234;
+while(char!=0)
+{
+char=parseInt(char/10);
+digit++
+}
+document.write(digit);
+</script>
+
+
+<br>
+<br>
+<br>
+
+
+<script>
+var char=4;
+let fact=1;
+for(i=1;i<=char;i++)
+{
+fact=fact*i;
+}
+document.write(fact);
+
+</script>
+
+
+
+<br>
+<br>
+<br>
+
+
+<script>
+var num=6;
+var fact1=1;
+var i=1;
+while(i<=num)
+{
+fact1=fact1*i;
+i++;
+}
+document.write(fact1);
+</script>
+
+<br>
+<br>
+<br>
+
+
+<script>
+var num=9889;
+let rem,temp;
+let sum=0;
+temp=num;
+while(num!=0)
+{
+rem=num%10;
+sum=sum*10+rem;
+num=parseInt(num/10);
+}
+if(temp==sum)
+{
+document.write(temp+" is a palindrome");
+}
+else
+{
+document.write(temp+" is not a palindrome")
+}
+</script>
+
+
+<br>
+<br>
+<br>
+
+
+<script>
+var num1=5;
+for(i=1;i<=num1;i++)
+{
+for(j=1;j<=i-1;j++)
+{
+document.write("&nbsp"+"&nbsp");
+}
+for(j=1;j<=num1+1-i;j++)
+{
+document.write("*")
+}
+document.write("<br>")
+}
+
+</script>
+
+
+</body>
+</html>

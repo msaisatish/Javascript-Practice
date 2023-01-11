@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var num=153;
+var digit=0,r,s=0;
+var num1=num;
+while(num!=0)
+{
+num=parseInt(num/10);
+digit++;
+
+}
+document.write("num of digits are " +digit+"<br>");
+num=num1;
+while(num>0)
+{
+r=num%10;
+s+=Math.pow(r,digit);
+num=parseInt(num/10);
+}
+document.write(s);
+if(num1==s)
+{
+document.write("Arm strong Number");
+}
+
+
+
+
+</script>
+</body>
+</html>
