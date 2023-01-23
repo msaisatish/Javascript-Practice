@@ -1,0 +1,74 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function library(bookname,bookauthor,bookyear,bookgenre,bookprice)
+{
+this.bookname=bookname;
+this.bookauthor=bookauthor;
+this.bookyear=bookyear;
+this.bookgenre=bookgenre;
+this.bookprice=bookprice;
+}
+var b1=new library("gonegirl","Gillian Flynn","2012","thriller","1500");
+var b2=new library("girl on the train","Paula Hawkins","2015","thriller","2000");
+var b3=new library("sharp objects","Gillian Flynn","2006","thriller","2300");
+var b4=new library("dune","Frank Herbert","1965","sci-fi","6200");
+var b5=new library("Foundation"," Isaac Asimov","1951","sci-fi","7000");
+var b6=new library("Snow Crash","Neal Stephenson","1992","sci-fi","5500");
+var b7=new library("Steve Jobs","Walter Isaacson","2013","biography","500");
+var b8=new library("Wings of Fire","Arun Tiwari","2002","biography","9000");
+var b9=new library("Alexander Hamilton"," Ron Chernow","1998","biography","4000");
+var b10=new library("ramayanam","valmiki","1751","ithihas","7000");
+
+var allbooks=[b1,b2,b3,b4,b5,b6,b7,b8,b9,b10];
+
+var arr1=allbooks.filter((alu)=>{return alu.bookgenre=="thriller"});
+var arr2=allbooks.filter((alu)=>{return alu.bookgenre=="sci-fi"});
+var arr3=allbooks.filter((alu)=>{return alu.bookgenre=="biography"});
+var arr4=allbooks.filter((alu)=>{return alu.bookgenre=="ithihas"});
+
+wish=parseInt(prompt("enter value"));
+
+switch(wish)
+{
+case 1:for(ele of arr1)
+{
+for(mod in ele)
+{
+document.write(mod+":"+ele[mod]+"<br>")
+}
+};
+break;
+case 2:for(ele of arr2)
+{
+for(mod in ele)
+{
+document.write(mod+":"+ele[mod]+"<br>")
+}
+};
+break;
+case 3:for(ele of arr3)
+{
+for(mod in ele)
+{
+document.write(mod+":"+ele[mod]+"<br>")
+}
+};
+break;
+case 4:for(ele of arr4)
+{
+for(mod in ele)
+{
+document.write(mod+":"+ele[mod]+"<br>")
+}
+};
+break;
+default:alert("Not In Range");
+}
+
+
+</script>
+</body>
+</html>
