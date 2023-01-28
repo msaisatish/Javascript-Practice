@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var person={
+firstName:"bhaskar",
+lastName:"ch",
+fullName:function(){return this.firstName+" "+this.lastName}
+}
+var person2={
+firstName:"dr",
+lastName:"reddys foundation"
+}
+document.write(person.fullName()+"<br>");
+document.write(person.fullName.call(person2))
+
+</script>
+</body>
+</html>

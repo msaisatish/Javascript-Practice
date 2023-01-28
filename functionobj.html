@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function mobilestore(model,price,series,ram)
+{
+this.model=model;
+this.price=price;
+this.series=series;
+this.ram=ram;
+}
+var m1=new mobilestore("Iphone","90000","14max","12gb");
+var m2=new mobilestore("oneplus","49000","9T","8gb");
+var m3=new mobilestore("samsung","17000","sdous","6gb");
+var ourmobilestore=[m1,m2,m3];
+var store=ourmobilestore.filter((mob)=>{return mob.price>"40000"});
+
+for(item of store)
+{
+for(ele in item)
+document.write(ele+":" +item[ele]);
+}
+</script>
+</body>
+</html>

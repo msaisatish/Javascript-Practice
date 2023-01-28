@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+class person
+{
+   constructor(fullName,age,phone)
+    {
+	this.fullName=fullName;
+	this.age=age;
+	this.phone=phone;
+    }
+display()
+{
+return "Hello"+this.fullName
+}
+getAge()
+{
+return this.fullName+" is "+this.age+" years old ";
+}
+}
+var p1=new person("john",25,"123");
+document.write(p1.display()+"<br>");
+document.write(p1.getAge());
+</script>
+</body>
+</html>
