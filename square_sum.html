@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+var arr=[1,23,4,12,5,6,15],sum=0,i=arr.length;
+var newarr=arr.filter((item)=>{
+while(i--)
+{
+sum+=Math.pow(arr[i],2);
+return sum;
+}
+});
+document.write(sum)
+document.write("<br>"+sum/arr.length)
+</script>
+</head>
+</html>
+
